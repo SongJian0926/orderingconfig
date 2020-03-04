@@ -3,9 +3,15 @@ server:
 spring:
   application:
     name: menuServer
+  datasource:
+    name: orderingsystem
+    url: jdbc:mysql://123.56.170.112:3306/orderingsystem?useUnicode=true&characterEncoding=UTF-8
+    username: orderingsystem
+    password: sj092678  
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true 
+   
